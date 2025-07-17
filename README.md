@@ -57,19 +57,25 @@ GEMINI_API_KEY=<YOUR_KEY>
 npm install
 ```
 
-### 5. Execute as migrações do banco
+### 5. Gera as migrações do banco
 
 ```bash
-npx drizzle-kit migrate
+npm run db:generate
 ```
 
-### 6. (Opcional) Popule o banco com dados de exemplo
+### 6. Execute as migrações do banco
+
+```bash
+npm run db:migrate
+```
+
+### 7. (Opcional) Popule o banco com dados de exemplo
 
 ```bash
 npm run db:seed
 ```
 
-### 7. Execute o projeto
+### 8. Execute o projeto
 
 **Desenvolvimento:**
 
@@ -88,6 +94,8 @@ npm start
 - `npm run dev` - Executa o servidor em modo de desenvolvimento com hot reload
 - `npm start` - Executa o servidor em modo de produção
 - `npm run db:seed` - Popula o banco de dados com dados de exemplo
+- `npm run db:generate` - Gera migrações do banco de dados
+- `npm run db:migrate` - Executa as migrações do banco de dados
 
 ## 🌐 Endpoints
 
