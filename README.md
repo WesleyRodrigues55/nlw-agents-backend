@@ -57,7 +57,7 @@ GEMINI_API_KEY=<YOUR_KEY>
 npm install
 ```
 
-### 5. Gera as migrações do banco
+### 5. (Opcional) Gera as migrações do banco se caso houver uma modificação/criação de tabela(s)
 
 ```bash
 npm run db:generate
