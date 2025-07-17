@@ -48,6 +48,7 @@ Crie um arquivo `.env` na raiz do projeto:
 ```env
 PORT=3333
 DATABASE_URL=postgresql://docker:docker@localhost:5432/agents
+GEMINI_API_KEY=<YOUR_KEY>
 ```
 
 ### 4. Instale as dependências
@@ -94,6 +95,9 @@ A API estará disponível em `http://localhost:3333`
 
 - `GET /health` - Health check da aplicação
 - `GET /rooms` - Lista as salas disponíveis
+- `POST /rooms` - Cria uma sala
+- `GET /rooms/:roomId/questions` - Lista as perguntas disponíveis de uma sala
+- `POST /rooms/:roomId/questions` - Cria uma pergunta em uma sala
 
 ---
 
